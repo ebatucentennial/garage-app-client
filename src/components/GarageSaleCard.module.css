@@ -1,0 +1,42 @@
+.card {
+    max-width: 250px;
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover,
+.card:focus {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    outline: none;
+}
+
+.title {
+    font-size: 1.1rem;
+    color: #ff6700;
+    margin-bottom: 5px;
+}
+
+.address {
+    font-size: 0.95rem;
+    color: #555555;
+    margin-bottom: 5px;
+}
+
+.dates {
+    font-size: 0.85rem;
+    color: #333333;
+    margin-bottom: 3px;
+}
+
+.viewDetails {
+    display: block;
+    margin-top: 8px;
+    font-size: 0.9rem;
+    color: #007bff;
+    text-decoration: underline;
+}

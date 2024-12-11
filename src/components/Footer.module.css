@@ -1,0 +1,140 @@
+.footer {
+    background-color: #343a40;
+    color: #ffffff;
+    margin-top: auto;
+    padding: 20px 0;
+  }
+  
+  .footerContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .footerColumn {
+    flex: 1 1 200px;
+    margin-bottom: 20px;
+  }
+  
+  .footerTitle {
+    text-transform: uppercase;
+    color: #ff6700;
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+  }
+  
+  .footerLinks {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footerLinks li {
+    margin-bottom: 10px;
+  }
+  
+  .footerLinks a {
+    color: #e1e1e1;
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  
+  .footerLinks a:hover {
+    color: #ffffff;
+  }
+  
+  .subscribeContainer {
+    display: flex;
+  }
+  
+  .subscribeInput {
+    flex: 1;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px 0 0 4px;
+    outline: none;
+  }
+  
+  .subscribeButton {
+    padding: 8px 12px;
+    border: none;
+    background-color: #ff6700;
+    color: #ffffff;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .subscribeButton:hover {
+    background-color: #e65c00;
+  }
+  
+  .socialIcons {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .socialIcons a {
+    color: #ffffff;
+    margin-right: 15px;
+    font-size: 1.2rem;
+    transition: color 0.2s;
+  }
+  
+  .socialIcons a:hover {
+    color: #ff6700;
+  }
+  
+  .footerBottom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #495057;
+    padding-top: 15px;
+    font-size: 0.9rem;
+    color: #6c757d;
+  }
+  
+  .footerBottom a {
+    color: #6c757d;
+    text-decoration: none;
+    margin-right: 15px;
+    transition: color 0.2s;
+  }
+  
+  .footerBottom a:hover {
+    color: #ffffff;
+  }
+  
+  @media (max-width: 768px) {
+    .footerContainer {
+      flex-direction: column;
+    }
+  
+    .subscribeContainer {
+      flex-direction: column;
+    }
+  
+    .subscribeInput,
+    .subscribeButton {
+      width: 100%;
+      border-radius: 4px;
+      margin-bottom: 10px;
+    }
+  
+    .socialIcons {
+      justify-content: center;
+    }
+  
+    .footerBottom {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .footerBottom a {
+      margin-right: 0;
+      margin-bottom: 1px;
+    }
+  }
+  

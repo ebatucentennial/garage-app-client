@@ -1,0 +1,22 @@
+.mapContainer {
+    width: 100%;
+    height: 600px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    position: relative;
+}
+
+.noSales {
+    text-align: center;
+    color: #6c757d;
+    font-size: 1.1rem;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .mapContainer {
+        height: 400px;
+    }
+}

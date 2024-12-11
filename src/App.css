@@ -1,0 +1,20 @@
+.search-results .card {
+  transition: transform 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+}
+
+.search-results .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.search-results .card-img-top {
+  height: 150px;
+  object-fit: cover;
+}
+
+.search-results .card-body .text-truncate {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}

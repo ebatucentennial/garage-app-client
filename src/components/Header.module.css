@@ -1,0 +1,162 @@
+
+.header {
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 15px 0;
+    margin-bottom: 20px;
+  }
+  
+  .logoContainer {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    width: 50px;
+    height: auto;
+    margin-right: 15px;
+  }
+  
+  .titleContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .title {
+    font-size: 1.5rem;
+    color: #ff6700;
+    margin: 0;
+  }
+  
+  .subtitle {
+    font-size: 0.9rem;
+    color: #6c757d;
+  }
+  
+  .searchContainer {
+    display: flex;
+    align-items: center;
+  }
+  
+  .searchInput {
+    width: 250px;
+    padding: 8px 12px;
+    border: 1px solid #ced4da;
+    border-radius: 4px 0 0 4px;
+    outline: none;
+    transition: border-color 0.2s;
+  }
+  
+  .searchInput:focus {
+    border-color: #ff6700;
+  }
+  
+  .searchButton {
+    padding: 8px 12px;
+    border: 1px solid #ced4da;
+    border-left: none;
+    background-color: #ffffff;
+    cursor: pointer;
+    border-radius: 0 4px 4px 0;
+    transition: background-color 0.2s;
+  }
+  
+  .searchButton:hover {
+    background-color: #f2f2f2;
+  }
+  
+  .authButtons {
+    display: flex;
+    align-items: center;
+  }
+  
+  .authButton {
+    margin-left: 10px;
+  }
+  
+  .btnSignIn {
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .btnSignIn:hover {
+    background-color: #0069d9;
+  }
+  
+  .btnAddSale {
+    background-color: #ff6700;
+    color: #ffffff;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .btnAddSale:hover {
+    background-color: #e65c00;
+  }
+  
+  .btnGroup {
+    display: flex;
+    align-items: center;
+  }
+  
+  .btnGroup button,
+  .btnGroup a {
+    margin-left: 10px;
+  }
+  
+  .btnLogout {
+    background-color: #dc3545;
+    color: #ffffff;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .btnLogout:hover {
+    background-color: #c82333;
+  }
+  
+  @media (max-width: 768px) {
+    .searchContainer {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  
+    .searchInput {
+      width: 100%;
+      border-radius: 4px;
+      margin-bottom: 10px;
+    }
+  
+    .searchButton {
+      width: 100%;
+      border-radius: 4px;
+    }
+  
+    .authButtons {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  
+    .authButton {
+      margin-left: 0;
+      margin-bottom: 10px;
+    }
+  
+    .btnGroup a,
+    .btnGroup button {
+      margin-left: 0;
+      margin-bottom: 10px;
+    }
+  }
+  

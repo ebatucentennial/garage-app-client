@@ -1,0 +1,67 @@
+/* src/components/GarageSaleList.module.css */
+
+.container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.title {
+    text-align: left;
+    font-size: 1.8rem;
+    color: #ff6700; /* Orange brand color */
+    margin-bottom: 30px;
+    margin-top: -40px;
+    margin-left: 10px;
+}
+
+.saleList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.saleCard {
+    flex: 1 1 300px; /* Responsive width */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.saleCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.saleTitle {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.saleTitle a {
+    text-decoration: none;
+    color: #007bff;
+    transition: color 0.2s;
+}
+
+.saleTitle a:hover {
+    color: #0056b3;
+}
+
+.saleDetails {
+    font-size: 0.95rem;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.noSales {
+    text-align: center;
+    color: #6c757d;
+    font-size: 1.2rem;
+    margin-top: 50px;
+}
