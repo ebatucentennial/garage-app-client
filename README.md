@@ -1,96 +1,97 @@
-# Garage Sale Deals - Server Side
+# Client-Side Application
 
-## Overview
-This repository contains the **server-side** code for the Garage Sale Deals application. The server provides APIs for user authentication, garage sale management, item management, and integration with third-party services like Google Maps.
+This repository contains the frontend code for the **GTA Garage Deals** application, a platform to create, manage, and browse garage sales in the Greater Toronto Area.
 
 ## Features
-- **User Authentication:** Secure JWT-based authentication.
-- **Garage Sale Management:** Create, update, and delete garage sales.
-- **Item Management:** Add, update, and delete items for garage sales.
-- **Google Maps Integration:** Location-based features for garage sales.
-- **Search Functionality:** Search for items and garage sales via API.
 
-## Technologies Used
-- **Backend Framework:** Node.js with Express.js
-- **Database:** MongoDB Atlas
-- **Authentication:** JSON Web Tokens (JWT)
-- **Cloud Storage:** Cloudinary for image uploads
-- **Google Maps API:** Location-based features
+- **Interactive Map**: View active garage sales on a map using Google Maps.
+- **Search Functionality**: Search for items across different garage sales.
+- **User Authentication**: Login and registration for users.
+- **Garage Sale Management**: Create, edit, and delete garage sales.
+- **Item Management**: Add, edit, and delete items within a garage sale.
+
+## Technology Stack
+
+- **React**: Framework for building the user interface.
+- **CSS Modules**: Scoped styling for components.
+- **Axios**: API calls to the backend.
+- **Google Maps API**: Map integration for viewing garage sales.
+- **React Router**: For navigation between pages.
 
 ## Prerequisites
-Before running the server-side application, ensure the following:
 
-1. Node.js and npm installed.
-2. A `.env` file with the following variables:
-   ```env
-   PORT=5000
-   MONGO_URI=mongodb+srv://<username>:<password>@cluster.mongodb.net/garage-sale?retryWrites=true&w=majority
-   JWT_SECRET=your-secret-key
-   CLOUDINARY_CLOUD_NAME=your-cloudinary-cloud-name
-   CLOUDINARY_API_KEY=your-cloudinary-api-key
-   CLOUDINARY_API_SECRET=your-cloudinary-api-secret
-   GOOGLE_MAPS_API_KEY=your-google-maps-api-key
-   ```
+- Node.js (v14 or above)
+- npm or yarn
 
-## Installation
+## Getting Started
+
+### Installation
 
 1. Clone the repository:
+
    ```bash
-   git clone https://github.com/yourusername/garage-sale-server.git
-   cd garage-sale-server
+   git clone https://github.com/yourusername/client-repo.git
+   cd client-repo
    ```
 
 2. Install dependencies:
+
    ```bash
    npm install
    ```
 
-3. Start the development server:
-   ```bash
-   npm run dev
+### Configuration
+
+1. Create a `.env` file in the root directory and add the following variables:
+
+   ```env
+   REACT_APP_API_URL=https://your-backend.onrender.com
+   REACT_APP_GOOGLE_MAPS_API_KEY=your-google-maps-api-key
    ```
 
-   The server will be available at `http://localhost:5000`.
+   Replace `https://your-backend.onrender.com` with the URL of your backend and `your-google-maps-api-key` with your Google Maps API key.
 
-## API Endpoints
+### Running the Application
 
-### Authentication
-- `POST /api/auth/register`: Register a new user.
-- `POST /api/auth/login`: Log in and receive a JWT.
+1. Start the development server:
 
-### Garage Sales
-- `GET /api/garage-sales/active-garage-sales`: Fetch active garage sales.
-- `POST /api/garage-sales`: Create a new garage sale.
-- `PUT /api/garage-sales/:id`: Update an existing garage sale.
-- `DELETE /api/garage-sales/:id`: Delete a garage sale.
+   ```bash
+   npm start
+   ```
 
-### Items
-- `GET /api/items/:garageSaleId`: Fetch items for a garage sale.
-- `POST /api/items`: Add a new item.
-- `PUT /api/items/:id`: Update an item.
-- `DELETE /api/items/:id`: Delete an item.
+2. Open your browser and navigate to `http://localhost:3000`.
+
+## Project Structure
+
+```
+src/
+├── components/       # Reusable React components
+├── pages/            # Page-level components
+├── services/         # API service configurations
+├── styles/           # Global and modular CSS files
+├── App.js            # Main application component
+└── index.js          # Entry point
+```
 
 ## Deployment
 
-To deploy the server-side application:
+1. Build the application:
 
-1. Set up a MongoDB Atlas cluster and configure environment variables.
-2. Deploy the application to a hosting service like Render or Heroku.
+   ```bash
+   npm run build
+   ```
 
-## Folder Structure
+2. Deploy the contents of the `build/` folder to your hosting platform.
 
-- **/controllers:** Business logic for various features.
-- **/models:** Mongoose schemas for MongoDB collections.
-- **/routes:** API routes for authentication, garage sales, and items.
-- **/middleware:** Middleware functions like authentication.
-- **/config:** Configuration files for MongoDB and Cloudinary.
+## Available Scripts
+
+- `npm start`: Runs the app in development mode.
+
 
 ## Contributing
-Contributions are welcome! Please submit a pull request for any feature enhancements or bug fixes.
+
+Contributions are welcome! Please fork the repository and submit a pull request.
 
 ## License
+
 This project is licensed under the MIT License. See the LICENSE file for details.
-
----
-
-For the client-side code, refer to the [Garage Sale Deals Client Repository](https://github.com/yourusername/garage-sale-client).
